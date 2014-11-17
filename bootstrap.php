@@ -7,3 +7,6 @@
  * Author: Michael McMillan
  * License: MIT
  */
+//if (!defined('ABSPATH') or !defined('WPINC')) exit;
+
+require_once plugin_dir_path (__FILE__) . 'class-wc-reduce-stock.php';
