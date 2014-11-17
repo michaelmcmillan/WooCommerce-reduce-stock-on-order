@@ -5,4 +5,6 @@ Have a listener for an action/hook whenever a customer adds or removes a product
 	Reduce stock when product is added. Also listen for quantity changes.
 	
 	Try to avoid cron-jobs, instead check for expired "products" (say 15 minutes as default)
-		When a product is expired increase stock to the original quantity. 
+		When a product is expired increase stock to the original quantity.
+
+	Look into: http://codex.wordpress.org/Function_Reference/wp_schedule_event 
