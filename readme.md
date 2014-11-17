@@ -1,4 +1,5 @@
-### WooCommerce Reduce Stock on Order Plugin
+# WooCommerce Reduce Stock on Order Plugin
+#### A plugin which avoids collisions in checkout by reducing stock when an order is placed
 
 When an item is added to the cart the quantity stays the same. It's only when the payment has been successful that the stock is reduced. Consider this scenario:
 
