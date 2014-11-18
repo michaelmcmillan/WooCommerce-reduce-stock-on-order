@@ -1,11 +1,13 @@
 # Ideas
 Have a listener for an action/hook whenever a customer adds or removes a product from the cart.
-	Keep a list of when the product was added to the cart and what item was added aswell as quantity.
-		(cart_id, timestamp, item, quantity)	
-	Reduce stock when product is added. Also listen for quantity changes.
-	
-	Try to avoid cron-jobs, instead check for expired "products" (say 15 minutes as default)
-		When a product is expired increase stock to the original quantity.
+    Keep a list of when the product was added to the cart and what item was added aswell as quantity.
+        (cart_id, timestamp, item, quantity)    
+    Reduce stock when product is added. Also listen for quantity changes.
+    
+    Try to avoid cron-jobs, instead check for expired "products" (say 15 minutes as default)
+        When a product is expired increase stock to the original quantity.
+    
+    Use get_option/update_option to keep track of all the carts (serialized array?)
 
-	Look into: http://codex.wordpress.org/Function_Reference/wp_schedule_event
-	Look into: https://github.com/woothemes/woocommerce/blob/master/includes/abstracts/abstract-wc-product.php#L164-L226 
+    Look into: http://codex.wordpress.org/Function_Reference/wp_schedule_event
+    Look into: https://github.com/woothemes/woocommerce/blob/master/includes/abstracts/abstract-wc-product.php#L164-L226 
